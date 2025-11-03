@@ -25,7 +25,7 @@ It helps teams maintain clean, well-organized APIs by identifying potential coll
 
 
 🏗️ Project Structure
-duplicate-api-detective/
+```duplicate-api-detective/
 ├── src/
 │   ├── main/
 │   │   ├── java/com/example/duplicateapidet/
@@ -40,7 +40,7 @@ duplicate-api-detective/
 │   └── config.yaml              # Default configuration
 ├── pom.xml                      # Maven build file
 └── README.md
-
+```
 
 ⚙️ Installation
 Prerequisites
