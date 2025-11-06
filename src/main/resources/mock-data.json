@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "services": 12,
+    "duplicateGroups": 4,
+    "highSimilarityPairs": 6,
+    "locSaved": 2430,
+    "avgRedundancy": 12.4
+  },
+  "services": ["auth", "billing", "payments", "orders", "catalog", "search", "profile", "notifications", "reports", "shipping", "pricing", "analytics"],
+  "matrix": [
+    [0,82,17,11,6,0,0,0,5,0,3,0],
+    [82,0,24,12,9,2,0,0,3,0,0,0],
+    [17,24,0,15,19,4,3,0,2,0,0,0],
+    [11,12,15,0,44,10,0,0,0,7,0,0],
+    [6,9,19,44,0,13,2,0,0,8,0,0],
+    [0,2,4,10,13,0,0,0,0,0,0,0],
+    [0,0,3,0,2,0,0,70,0,0,0,0],
+    [0,0,0,0,0,0,70,0,0,0,0,0],
+    [5,3,2,0,0,0,0,0,0,35,0,0],
+    [0,0,0,7,8,0,0,0,35,0,0,0],
+    [3,0,0,0,0,0,0,0,0,0,0,55],
+    [0,0,0,0,0,0,0,0,0,0,55,0]
+  ],
+  "pairs": [
+    { "a": "auth", "b": "billing", "similarity": 82, "linesDuplicated": 430 },
+    { "a": "orders", "b": "catalog", "similarity": 44, "linesDuplicated": 290 },
+    { "a": "profile", "b": "notifications", "similarity": 70, "linesDuplicated": 210 },
+    { "a": "reports", "b": "shipping", "similarity": 35, "linesDuplicated": 120 },
+    { "a": "pricing", "b": "analytics", "similarity": 55, "linesDuplicated": 260 },
+    { "a": "auth", "b": "payments", "similarity": 17, "linesDuplicated": 60 }
+  ],
+  "groups": [
+    { "id": "G1", "repos": ["auth", "billing"], "maxSimilarity": 82, "linesDuplicated": 430 },
+    { "id": "G2", "repos": ["orders", "catalog"], "maxSimilarity": 44, "linesDuplicated": 290 },
+    { "id": "G3", "repos": ["profile", "notifications"], "maxSimilarity": 70, "linesDuplicated": 210 },
+    { "id": "G4", "repos": ["pricing", "analytics"], "maxSimilarity": 55, "linesDuplicated": 260 }
+  ],
+  "trend": [
+    { "date": "2025-10-01", "duplicationPercent": 15.2 },
+    { "date": "2025-10-08", "duplicationPercent": 14.1 },
+    { "date": "2025-10-15", "duplicationPercent": 13.4 },
+    { "date": "2025-10-22", "duplicationPercent": 12.8 },
+    { "date": "2025-10-29", "duplicationPercent": 12.4 }
+  ]
+}
